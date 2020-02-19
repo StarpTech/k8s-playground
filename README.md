@@ -20,6 +20,14 @@ microk8s.helm init
 microk8s.status
 ```
 
+## Build docker image
+
+```bash
+docker build -t k8-simple-golang:1.0 .
+# test it
+docker run -p 8000:8000 k8-simple-golang:1.0
+```
+
 ## Import locally build image into K8s registry
 
 ```bash
