@@ -43,11 +43,14 @@ microk8s.ctr images ls
 kubectl apply -f name.yaml
 ```
 
-# Reference tutorials
-
-- https://dev.to/ishankhare07/deploy-a-golang-api-on-kubernetes-with-nginx-ingress-33k6
-- https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-resource-requests-and-limits
-
-# K8s CodeSheet
+## K8s CodeSheet
 
 https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
+
+# Experiments
+
+- Run nginx and route to two different HTTP services: One service is replicated with a factor of 3. https://dev.to/ishankhare07/deploy-a-golang-api-on-kubernetes-with-nginx-ingress-33k6
+
+## Links
+
+- https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-resource-requests-and-limits
