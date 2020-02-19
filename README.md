@@ -10,12 +10,6 @@ Docs: https://microk8s.io/docs/
 # Alias
 sudo snap alias microk8s.kubectl kubectl
 sudo snap alias microk8s.helm helm
-# Export image from local registry
-docker save k8-simple-golang > k8-simple-golang.tar
-# Import image
-microk8s.ctr image import k8-simple-golang.tar
-# List all images
-microk8s.ctr images ls
 ```
 
 ## 3. Enable K8s addons
