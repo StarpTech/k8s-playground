@@ -43,7 +43,11 @@ https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
 
 # Experiments
 
-- Run nginx and route to two different HTTP services: One service is replicated with a factor of 3. https://dev.to/ishankhare07/deploy-a-golang-api-on-kubernetes-with-nginx-ingress-33k6
+- Run nginx and route to two different HTTP services: One service is replicated with a factor of 3. https://dev.to/ishankhare07/deploy-a-golang-api-on-kubernetes-with-nginx-ingress-33k6. It will touch following resources and tools:
+  - Deployment
+  - Service
+  - Ingress
+  - Helm
 
 ## Links
 
