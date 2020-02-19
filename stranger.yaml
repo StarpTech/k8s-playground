@@ -1,0 +1,31 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: stranger-app
+  labels:
+    app: stranger
+spec:
+  containers:
+    - name: stranger-app
+      image: hashicorp/http-echo
+      resources:
+        requests:
+          memory: "50Mi"
+          cpu: "200m"
+        limits:
+          memory: 100Mi
+          cpu: 700m
+      args:
+        - "-text=another stranger"
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: stranger-service
+spec:
+  selector:
+    app: stranger
+  type: NodePort
+  ports:
+    - port: 5678
